@@ -16,8 +16,8 @@ include $(DEVKITPPC)/wii_rules
 # INCLUDES is a list of directories containing extra header files
 #---------------------------------------------------------------------------------
 
-TARGET		:=	NetLog
-RELID		:=  201
+TARGET		:=	spotify
+RELID		:=  200
 BUILD		:=	build
 SOURCES		:=	source $(wildcard source/*) ../lib/BrawlHeaders/PowerPC_EABI_Support/Runtime/Src/
 INCLUDES	:=	include

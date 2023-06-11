@@ -1,4 +1,4 @@
-#include "css_hooks.h"
+#include "Spotify.h"
 
 namespace Syringe {
 
@@ -21,7 +21,7 @@ namespace Syringe {
             (*ctor)();
         }
 
-        CSSHooks::InstallHooks();
+        Spotify::Init();
     }
 
     void _epilog()

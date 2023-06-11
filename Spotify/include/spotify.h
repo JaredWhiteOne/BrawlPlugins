@@ -1,6 +1,6 @@
 #pragma once
 
-namespace NetLog {
+namespace Spotify {
     int Init();
     void InstallHooks();
 }

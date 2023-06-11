@@ -12,22 +12,12 @@ export LIB 		:= $(CURDIR)/lib
 
 .PHONY: all clean
 
-all: AsyncRSP.rel ftp.rel NetLog.rel
+all: spotify.rel
 
-AsyncRSP.rel:
-	$(MAKE) -C AsyncRSP
-	@cp AsyncRSP/$@ $@
-
-ftp.rel:
-	$(MAKE) -s -C ftp
-	@cp ftp/$@ $@
-
-NetLog.rel:
-	$(MAKE) -s -C NetLog
-	@cp NetLog/$@ $@
+spotify.rel:
+	$(MAKE) -s -C Spotify
+	@cp Spotify/$@ $@
 
 clean:
 	@rm ./*.rel
-	$(MAKE) -s -C AsyncRSP clean
-	$(MAKE) -s -C ftp clean
-	$(MAKE) -s -C NetLog clean
+	$(MAKE) -s -C Spotify clean
